@@ -1,0 +1,98 @@
+/* creating grid on shape container */
+.shapes {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    background-color: rgb(216, 245, 250);
+    border: 1.5em solid rgb(124, 223, 236);
+    padding: 10px;
+    margin: 3px;
+}
+
+/* designing each shape by specific class (shape) name */
+.circle {
+    height: 15vmin;
+    width: 15vmin;
+    background-color: aqua;
+    border: 2vmin dashed rgb(14, 213, 248);
+    color: transparent;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.square {
+    height: 10vmax;
+    width: 10vmax;
+    background-color: yellowgreen;
+    border: 4vmax double rgb(39, 182, 7);
+    color: transparent;
+    z-index: 2;
+}
+
+.roundsquare {
+    height: 6rem;
+    width: 6rem;
+    background-color: pink;
+    border: 2em dotted rgb(247, 127, 147);
+    border-radius: 30%;
+    color: transparent;
+    z-index: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 6rem solid;
+    border-right: 6rem solid;
+    border-bottom: 10rem solid rgb(247, 199, 55);
+    color: transparent;
+    z-index: 1;
+}
+
+.rectangle {
+    height: 10vmin;
+    width: 15vmin;
+    background-color: plum;
+    border: 6vmin ridge rgb(201, 156, 239);
+    color: transparent;
+    z-index: 5;
+}
+
+form {
+    background-color: rgb(252, 255, 192);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem;
+    padding-top: 3px;
+    font-family: sans-serif;
+    color: rgb(95, 95, 5);
+}
+
+/* following blocks of code set screen compatability */
+
+/* desktop minimum width */
+@media only screen and (min-width: 1680px) {
+    body {
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* tablet size restriction */
+@media only screen and (min-width: 768px) and (max-width: 1679px) {
+    body {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* mobile device maximum width */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+}
